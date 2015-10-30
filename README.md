@@ -2,7 +2,7 @@
 
 This is a demo app to generate call log record against an account.
 
-It is useful for creating call log records in sandbox accounts to perform call llog API calls.
+It is useful for creating call log records in sandbox accounts to perform call log API calls.
 
 ## Prerequisites
 
@@ -21,22 +21,22 @@ To check your version of Java run the following:
 Use the following steps:
 
 1. Download the release JAR
-1. Download the `config.properties` file
-1. Edit the `config.properties` file
+1. Download and edit the `config.properties` file
 1. Run the program using Java
 
 For example:
 
 ```bash
+# Download the app JAR
 wget https://github.com/vyshakhbabji/RINGCENTRAL-Call-log-record-generator-app/releases/download/0.0.1/Call-Log-Generator.jar
 
-wget https://raw.githubusercontent.com/vyshakhbabji/RINGCENTRAL-Call-log-record-generator-app/master/config-sample.properties 
+# Download the sample config file
+wget https://raw.githubusercontent.com/vyshakhbabji/RINGCENTRAL-Call-log-record-generator-app/master/config-sample.properties -O config.properties
 
 # Edit the config.properties file
 vi config.properties
 
 # Run the program and create RingOut calls
-
 java -jar Call-Log-Generator.jar
 ```
 
@@ -46,7 +46,7 @@ If you have multiple versions of Java, replace the `java` command above with the
 # Get your Java versions
 /usr/libexec/java_home -V
 
-# Run the program and create RingOut calls
+# Run the program and create RingOut calls with your Java version added below
 /usr/libexec/java_home -v 1.8.0_60 --exec java -jar Call-Log-Generator.jar
 ```
 
